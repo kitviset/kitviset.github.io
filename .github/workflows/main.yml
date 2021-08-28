@@ -28,5 +28,6 @@ jobs:
       run: |
         npm run build --if-present
         echo "Build Success"
+        ls -a
     - name: Deploying the static website to gh-pages
       run: npm run deploy --if-present
