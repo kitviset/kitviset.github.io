@@ -29,4 +29,9 @@ jobs:
         npm run build --if-present
         echo "Build Success"
     - name: Deploying the static website to gh-pages
-      run: npm run deploy --if-present
+      run: |
+        if [ -d "public" ]; then
+          npm run deploy --if-present
+        else
+          echo "Directory does not exists" 
+        fi
