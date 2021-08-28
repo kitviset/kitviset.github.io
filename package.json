@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "prod": "echo \"Add your build command here\"",
+    "prod": "echo \"Deploy Pages\"",
     "postinstall": "node ./node_modules/husky/lib/installer/bin install",
     "deploy": "git push origin `git subtree split --prefix public master`:gh-pages --force"
   },
